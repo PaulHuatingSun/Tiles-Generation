@@ -105,7 +105,7 @@
         let map = new mapboxgl.Map({
             container: 'map', // container ID
             style: 'mapbox://styles/mapbox/dark-v10',
-            zoom: 11, // starting zoom
+            zoom: 10, // starting zoom
             center: [-122.2559435, 47.6002614] // starting center
         });
 
@@ -148,7 +148,7 @@
             });            
 
             map.addLayer({
-                'id': 'basemap',
+                'id': 'Basemap',
                 'type': 'raster',
                 'layout': {
                     'visibility': 'none'
@@ -157,7 +157,7 @@
             });
 
             map.addLayer({
-                'id': 'landmark',
+                'id': 'Landmark',
                 'type': 'raster',
                 'layout': {
                     'visibility': 'none'
@@ -166,7 +166,7 @@
             });
 
             map.addLayer({
-                'id': 'thematic',
+                'id': 'Basemap-and-Landmark',
                 'type': 'raster',
                 'layout': {
                     'visibility': 'none'
@@ -175,7 +175,7 @@
             });         
 
             map.addLayer({
-                'id': 'black',
+                'id': 'Black-History-Month',
                 'type': 'raster',
                 'layout': {
                     'visibility': 'none'
@@ -188,12 +188,12 @@
         // After the last frame rendered before the map enters an "idle" state.
         map.on('idle', () => {
             // If these two layers were not added to the map, abort
-            if (!map.getLayer('basemap', 'landmark', 'thematic', 'black')) {
+            if (!map.getLayer('Basemap', 'Landmark', 'Basemap-and-Landmark', 'Black-History-Month')) {
                 return;
             }
 
             // Enumerate ids of the layers.
-            const toggleableLayerIds = ['basemap', 'landmark', 'thematic', 'black'];
+            const toggleableLayerIds = ['Basemap', 'Landmark', 'Basemap-and-Landmark', 'Black-History-Month'];
 
             // Set up the corresponding toggle button for each layer.
             for (const id of toggleableLayerIds) {
