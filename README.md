@@ -24,7 +24,7 @@ This project includes four different tile sets of the geographic phenomena. An i
 
 
 #### Tile Set 3: Base Map and Seattle Landmarks
-![Tile 3](/image/Tile3-Thematic_Layer.png "Tile 3") 
+![Tile 3](/image/Tile3-Layer_Group.png "Tile 3") 
 - Examined geographic area: Seattle, WA [-122.2559435, 47.6002614] and surrounding area
 - Available zoom layers: Min - 1; Max - 10
 - Description: This is a layer group that is composed of a thematic layer from the second tile set and the basemap form the first tile set.
