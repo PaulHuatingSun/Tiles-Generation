@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Map Design</title>
+    <title>Tile Generations</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
@@ -96,7 +96,7 @@
   <div class='map-overlay' id='features'>
       <h3>Map Tiles</h3>
       <div id='text-description'>
-          <small>Explore different map layers</small>
+          <small>Explore different map layers to see Seattle public landmarks data and black history month map.</small>
       </div>
   </div>
     <script type="text/javascript">
@@ -105,7 +105,7 @@
         let map = new mapboxgl.Map({
             container: 'map', // container ID
             style: 'mapbox://styles/mapbox/dark-v10',
-            zoom: 10, // starting zoom
+            zoom: 9, // starting zoom
             center: [-122.2559435, 47.6002614] // starting center
         });
 
