@@ -129,10 +129,10 @@
                 'attribution': 'Map tiles designed by Huating Sun'
             });
 
-            map.addSource('thematic-tile', {
+            map.addSource('group-tile', {
                 'type': 'raster',
                 'tiles': [
-                    'assets/thematic/{z}/{x}/{y}.png'
+                    'assets/layer_group/{z}/{x}/{y}.png'
                 ],
                 'tileSize': 256,
                 'attribution': 'Map tiles designed by Huating Sun'
@@ -171,7 +171,7 @@
                 'layout': {
                     'visibility': 'none'
                 },
-                'source': 'thematic-tile'
+                'source': 'group-tile'
             });         
 
             map.addLayer({
